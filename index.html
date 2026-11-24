@@ -1,21 +1,14 @@
 <!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Тестовая страница</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main>
-    <p class="label">ЛОКАЛЬНЫЙ ТЕСТ</p>
-    <h1>Страница для проверки загрузки</h1>
-    <p>Эта страница помогает проверить загрузку текста, стилей и изображений. Она не содержит рекламы и не подключается к внешним сервисам.</p>
-    <div class="cards">
-      <article><img src="image-1.svg" alt="Абстрактные горы"><h2>Первая карточка</h2><p>Изображение и текст загружаются с этого же сайта.</p></article>
-      <article><img src="image-2.svg" alt="Абстрактные круги"><h2>Вторая карточка</h2><p>Страницу можно использовать для технических проверок.</p></article>
-    </div>
-    <p class="foot">Тестовая страница · все ресурсы локальные</p>
-  </main>
-</body>
-</html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Тестовый сайт — главная</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+  <p class="label">ТЕСТОВЫЙ САЙТ</p>
+  <h1>Проверка браузерных действий</h1>
+  <p>На этом сайте можно проверить загрузку, прокрутку, переходы и нажатия. Формы оплаты и внешние сервисы не подключены.</p>
+  <div class="cards">
+    <article><img src="image-1.svg" alt="Абстрактные горы"><h2>Тестовый раздел</h2><p>Перейдите на отдельную страницу для проверки кнопки.</p><a class="button" href="details.html" data-test="next-page">Открыть раздел</a></article>
+    <article><img src="image-2.svg" alt="Абстрактные круги"><h2>Результат</h2><p>Браузер должен открыть страницу и выполнить действие.</p><a class="button" href="about.html">О тесте</a></article>
+  </div>
+  <section class="spacer"><h2>Прокрутка страницы</h2><p>Этот раздел расположен ниже, чтобы можно было проверить прокрутку.</p><a href="details.html" data-test="scroll-target">Перейти к проверке</a></section>
+  <p class="foot">Тестовая страница · все ресурсы локальные</p>
+</main></body></html>
