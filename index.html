@@ -1,14 +1,90 @@
 <!doctype html>
 <html lang="ru">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Тестовый сайт — главная</title><link rel="stylesheet" href="style.css"></head>
-<body><main>
-  <p class="label">ТЕСТОВЫЙ САЙТ</p>
-  <h1>Проверка браузерных действий</h1>
-  <p>На этом сайте можно проверить загрузку, прокрутку, переходы и нажатия. Формы оплаты и внешние сервисы не подключены.</p>
-  <div class="cards">
-    <article><img src="image-1.svg" alt="Абстрактные горы"><h2>Тестовый раздел</h2><p>Перейдите на отдельную страницу для проверки кнопки.</p><a class="button" href="details.html" data-test="next-page">Открыть раздел</a></article>
-    <article><img src="image-2.svg" alt="Абстрактные круги"><h2>Результат</h2><p>Браузер должен открыть страницу и выполнить действие.</p><a class="button" href="about.html">О тесте</a></article>
-  </div>
-  <section class="spacer"><h2>Прокрутка страницы</h2><p>Этот раздел расположен ниже, чтобы можно было проверить прокрутку.</p><a href="details.html" data-test="scroll-target">Перейти к проверке</a></section>
-  <p class="foot">Тестовая страница · все ресурсы локальные</p>
-</main></body></html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Тестовый сайт — главная</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        ((k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a));
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js?id=114681998",
+        "ym",
+      );
+
+      ym(114681998, "init", {
+        ssr: true,
+        webvisor: true,
+        clickmap: true,
+        ecommerce: "dataLayer",
+        referrer: document.referrer,
+        url: location.href,
+        accurateTrackBounce: true,
+        trackLinks: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/114681998"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </head>
+  <body>
+    <main>
+      <p class="label">ТЕСТОВЫЙ САЙТ</p>
+      <h1>Проверка браузерных действий</h1>
+      <p>
+        На этом сайте можно проверить загрузку, прокрутку, переходы и нажатия.
+        Формы оплаты и внешние сервисы не подключены.
+      </p>
+      <div class="cards">
+        <article>
+          <img src="image-1.svg" alt="Абстрактные горы" />
+          <h2>Тестовый раздел</h2>
+          <p>Перейдите на отдельную страницу для проверки кнопки.</p>
+          <a class="button" href="details.html" data-test="next-page"
+            >Открыть раздел</a
+          >
+        </article>
+        <article>
+          <img src="image-2.svg" alt="Абстрактные круги" />
+          <h2>Результат</h2>
+          <p>Браузер должен открыть страницу и выполнить действие.</p>
+          <a class="button" href="about.html">О тесте</a>
+        </article>
+      </div>
+      <section class="spacer">
+        <h2>Прокрутка страницы</h2>
+        <p>
+          Этот раздел расположен ниже, чтобы можно было проверить прокрутку.
+        </p>
+        <a href="details.html" data-test="scroll-target">Перейти к проверке</a>
+      </section>
+      <p class="foot">Тестовая страница · все ресурсы локальные</p>
+    </main>
+  </body>
+</html>
